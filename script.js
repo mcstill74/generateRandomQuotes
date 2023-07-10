@@ -53,7 +53,7 @@ const messageQuotes = {
 };
 
 function selectRandomQuote(){
-    let topic = generateRandomQuote();
+    let topic = generateRandomQuote().toTitleCase();
     let index = generateRandomIndexNumber(messageQuotes[topic].length);
     console.log(topic + ' quote: ' + messageQuotes[topic][index]);
 };
